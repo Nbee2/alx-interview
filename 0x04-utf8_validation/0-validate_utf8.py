@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This is a valid UTF-8 encoding. """
+""" This code represents a validation of UTF-8 encoding. """
 
 def validUTF8(data):
     """
