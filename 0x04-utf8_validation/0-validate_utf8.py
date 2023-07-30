@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ This is a valid UTF-8 encoding. """
 
-def validutf8(data):
+def validUTF8(data):
     """
     Encode UTF-8
     """
