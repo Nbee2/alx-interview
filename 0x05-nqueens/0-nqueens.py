@@ -1,11 +1,12 @@
 import sys
 
+
 def is_safe(board, row, col):
-    # Check if there is a queen in the same column or diagonals
     for i in range(row):
         if board[i] == col or abs(board[i] - col) == abs(i - row):
             return False
     return True
+
 
 def solve_nqueens(N):
     def backtrack(board, row):
@@ -24,6 +25,7 @@ def solve_nqueens(N):
     board = [-1] * N
     backtrack(board, 0)
 
+
 def main():
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
@@ -38,6 +40,7 @@ def main():
     except ValueError:
         print("N must be a number")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
